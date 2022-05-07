@@ -1,0 +1,39 @@
+/* @font-face
+{
+  font-family: 'Alibaba-PuHuiTi-Bold';
+  src: local('Alibaba-PuHuiTi-Bold'),url('https://files.fanneng.com/group1/data/fontFamily/Alibaba-PuHuiTi-Bold/Alibaba-PuHuiTi-Bold.otf') format('opentype');
+}
+@font-face
+{
+  font-family: 'Alibaba-PuHuiTi-Medium';
+  src: local('Alibaba-PuHuiTi-Medium'),url('https://files.fanneng.com/group1/data/fontFamily/Alibaba-PuHuiTi-Medium/Alibaba-PuHuiTi-Medium.otf') format('opentype');
+}
+@font-face
+{
+  font-family: 'Alibaba-PuHuiTi-Regular';
+  src: local('Alibaba-PuHuiTi-Regular'),url('https://files.fanneng.com/group1/data/fontFamily/Alibaba-PuHuiTi-Regular/Alibaba-PuHuiTi-Regular.otf') format('opentype');
+} */
+@font-face
+{
+  font-family: 'Alibaba-PuHuiTi-Bold';
+  src: local('Alibaba-PuHuiTi-Bold'),url('https://app-develop-platform.oss-cn-beijing.aliyuncs.com/application/octet-stream/xmnc5c214929e99484db79c408f6239a38d.otf?Expires=1890201707&OSSAccessKeyId=LTAI4Fw4awYr4xbhRhhWmkjS&Signature=AEX7LjBD1%2ByZMCbo08jkCQxF7r8%3D') format('opentype');
+}
+@font-face
+{
+  font-family: 'Alibaba-PuHuiTi-Medium';
+  src: local('Alibaba-PuHuiTi-Medium'),url('https://app-develop-platform.oss-cn-beijing.aliyuncs.com/application/octet-stream/xgq70dfccaf7e8545c4a6e518acc4569e53.otf?Expires=1890201797&OSSAccessKeyId=LTAI4Fw4awYr4xbhRhhWmkjS&Signature=l5IwLdKAHLmAQGiCvAYezXiluyM%3D') format('opentype');
+}
+@font-face
+{
+  font-family: 'Alibaba-PuHuiTi-Regular';
+  src: local('Alibaba-PuHuiTi-Regular'),url('https://app-develop-platform.oss-cn-beijing.aliyuncs.com/application/octet-stream/adv92857661895b42d59c8b36da16dbda5c.otf?Expires=1890201909&OSSAccessKeyId=LTAI4Fw4awYr4xbhRhhWmkjS&Signature=W%2FTBwiEyfkNJ6uk9%2BNEGwAvQZsQ%3D') format('opentype');
+}
+.Alibaba-PuHuiTi-Bold{
+  font-family: Alibaba-PuHuiTi-Bold
+}
+.Alibaba-PuHuiTi-Medium{
+  font-family: Alibaba-PuHuiTi-Medium
+}
+.Alibaba-PuHuiTi-Regular{
+  font-family: Alibaba-PuHuiTi-Regular
+}

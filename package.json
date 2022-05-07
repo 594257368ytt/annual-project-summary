@@ -1,0 +1,97 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "cross-env ENV_TYPE=local APP_ENV=DEV vue-cli-service serve",
+    "serve:test": "cross-env ENV_TYPE=local APP_ENV=TEST vue-cli-service serve",
+    "serve:uat": "cross-env ENV_TYPE=local APP_ENV=UAT vue-cli-service serve",
+    "serve:prod": "cross-env ENV_TYPE=local APP_ENV=PRO vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:test": "cross-env ENV_TYPE=local APP_ENV=TEST vue-cli-service build",
+    "build:uat": "cross-env ENV_TYPE=local APP_ENV=UAT vue-cli-service build",
+    "build:prod": "cross-env ENV_TYPE=local APP_ENV=PRO vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "analyzer": "use_analyzer=true npm run serve"
+  },
+  "enn": {
+    "type": "pc",
+    "adapter": "master"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint"
+    }
+  },
+  "dependencies": {
+    "@enncloud/enn-auth-sdk": "^0.1.0",
+    "@enncloud/frontend-monitor-sdk": "^0.1.0",
+    "axios": "^0.18.0",
+    "big-integer": "^1.6.48",
+    "core-js": "^2.6.5",
+    "echarts": "^5.3.1",
+    "js-base64": "^3.5.2",
+    "mockjs": "^1.1.0",
+    "register-service-worker": "^1.6.2",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "commitlint": "^11.0.0",
+    "husky": "^4.3.6",
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-plugin-pwa": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-import": "^1.12.2",
+    "compression-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^6.0.0",
+    "prettier": "2.1.2",
+    "style-resources-loader": "^1.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/prettier"
+    ],
+    "rules": {
+      "indent": [
+        1,
+        2
+      ],
+      "quotes": [
+        1,
+        "single"
+      ]
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8",
+    "not ie <= 11",
+    "Android >= 4.0",
+    "iOS >= 8"
+  ]
+}
