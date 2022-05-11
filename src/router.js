@@ -4,6 +4,9 @@ import table from './views/table.vue'
 import canvas from './views/canvas.vue'
 import echart from './views/echart.vue'
 import echartParent from './views/echartParent.vue'
+import swipe from './views/swipe.vue'
+import swipe2 from './views/swipe2.vue'
+import swipe3 from './views/swipe3.vue'
 
 const router = new VueRouter({
   routes: [
@@ -37,11 +40,26 @@ const router = new VueRouter({
       name: 'echartParent',
       component: echartParent,
     },
+    {
+      path: '/swipe',
+      name: 'swipe',
+      component: swipe,
+    },
+    {
+      path: '/swipe2',
+      name: 'swipe2',
+      component: swipe2,
+    },
+    {
+      path: '/swipe3',
+      name: 'swipe3',
+      component: swipe3,
+    },
   ],
   scrollBehavior: () => ({
     x: 0,
-    y: 0
-  })
+    y: 0,
+  }),
 })
 router.beforeEach((to, from, next) => {
   // ...
