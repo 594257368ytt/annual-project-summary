@@ -7,6 +7,10 @@ import echartParent from './views/echartParent.vue'
 import swipe from './views/swipe.vue'
 import swipe2 from './views/swipe2.vue'
 import swipe3 from './views/swipe3.vue'
+import multiLevelHeader from './views/multiLevelHeader.vue'
+import inputDemo from './views/inputDemo.vue'
+import popper from './views/popper.vue'
+import triangle from './views/triangle.vue'
 
 const router = new VueRouter({
   routes: [
@@ -54,6 +58,26 @@ const router = new VueRouter({
       path: '/swipe3',
       name: 'swipe3',
       component: swipe3,
+    },
+    {
+      path: '/multiLevelHeader',
+      name: 'multiLevelHeader',
+      component: multiLevelHeader,
+    },
+    {
+      path: '/inputDemo',
+      name: 'inputDemo',
+      component: inputDemo,
+    },
+    {
+      path: '/popper',
+      name: 'popper',
+      component: popper,
+    },
+    {
+      path: '/triangle',
+      name: 'triangle',
+      component: triangle,
     },
   ],
   scrollBehavior: () => ({

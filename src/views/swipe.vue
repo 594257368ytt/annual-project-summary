@@ -3,13 +3,12 @@
     <h3>当按钮在轮播图外面将不会引起同步轮播</h3>
     <div v-for="i in 3" :key="i">
       <el-button @click="changePage(i)">向右</el-button>
-      <van-swipe
-        :show-indicators="false"
-        @change="getIndex"
-        :ref="`swipe${i - 1}`"
-      >
+      <van-swipe @change="getIndex" :ref="`swipe${i - 1}`">
         <van-swipe-item>1</van-swipe-item>
         <van-swipe-item>2</van-swipe-item>
+        <template #indicator>
+          <div class="custom-indicator">{{ nowIndex }}页</div>
+        </template>
       </van-swipe>
       <div class="my-indicator-group">
         <div
@@ -101,5 +100,15 @@ export default {
 }
 .indicatorActive {
   background-color: red !important;
+}
+.custom-indicator {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  padding: 2px 5px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.1);
 }
 </style>

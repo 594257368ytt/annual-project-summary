@@ -97,7 +97,7 @@ module.exports = {
       vant: 'vant',
     }
   },
-  css:{"loaderOptions":{"less":{"lessOptions":{"modifyVars":{"primaryColor":"#0780ED","tint0":"7,128,237","tint1":"#208def","tint2":"#3999f1","tint3":"#51a6f2","tint4":"#6ab3f4","tint5":"#83c0f6","tint6":"#9cccf8","tint7":"#b5d9fa","tint8":"#cde6fb","tint9":"#e6f2fd","shade":"#673d5"},"javascriptEnabled":true}}}}
+  css:{'loaderOptions':{'less':{'lessOptions':{'modifyVars':{'primaryColor':'#0780ED','tint0':'7,128,237','tint1':'#208def','tint2':'#3999f1','tint3':'#51a6f2','tint4':'#6ab3f4','tint5':'#83c0f6','tint6':'#9cccf8','tint7':'#b5d9fa','tint8':'#cde6fb','tint9':'#e6f2fd','shade':'#673d5'},'javascriptEnabled':true}}}}
 }
 
 function addStyleResource(rule) {

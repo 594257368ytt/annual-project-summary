@@ -4,8 +4,15 @@ import store from './store'
 import axios from './axios'
 import '@/assets/css/index.less'
 import './mock.js'
-import EnnAuthSdk from "@enncloud/enn-auth-sdk";
-import { MonitorJS } from '@enncloud/frontend-monitor-sdk';
+import EnnAuthSdk from '@enncloud/enn-auth-sdk'
+import { MonitorJS } from '@enncloud/frontend-monitor-sdk'
+import { createApp } from 'vue'
+import { Swipe, SwipeItem } from 'vant'
+
+// const app = createApp()
+// app.use(Swipe)
+// app.use(SwipeItem)
+
 const echarts = require('echarts')
 const moment = require('moment')
 
@@ -27,7 +34,6 @@ const moment = require('moment')
 //鉴权sdk文档 https://confluence.enncloud.cn/pages/viewpage.action?pageId=469139726
 
 function initVue() {
-  
   new MonitorJS().init({
     pageId: 'someapp', //应用唯一标示
     env: MonitorJS.DEV, //上报错误地址
